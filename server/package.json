@@ -11,7 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+<<<<<<< HEAD
     "ethereum-cryptography": "^1.2.0",
+=======
+>>>>>>> origin/main
     "express": "^4.18.1"
   }
 }
