@@ -28,6 +28,10 @@ app.post("/send", (req, res) => {
 <<<<<<< HEAD
   // TODO: get a signature from the client-side application
   // recover the public address fro the signature
+   // Verify the signature here using an appropriate library
+   if (verifySignature(sender, signature)) {
+    setInitialBalance(sender);
+    setInitialBalance(recipient);
 
 =======
 >>>>>>> origin/main
@@ -53,6 +57,10 @@ function setInitialBalance(address) {
   if (!balances[address]) {
     balances[address] = 0;
   }
+
+
+} else {
+  res.status(401).send({ message: "Invalid signature!" });
 }
 <<<<<<< HEAD
 
